@@ -6,6 +6,18 @@ The implementation is not robust i.e. sometimes uses a quick-n-dirty `indexOf` o
 
 The tools are not split into individual packages, so the dependencies of all the tools have to be installed even if you only need one tool. For now, this is by design, to use common utility functions and reduce extra cost of managing several small packages.
 
+## Demos
+
+<details>
+<summary>Demo: loc</summary>
+<img src="./README-demo-loc.png" alt="Demo: loc" />
+</details>
+
+<details>
+<summary>Demo: js-complex</summary>
+<img src="./README-demo-js-complex.png" alt="Demo: js-complex" />
+</details>
+
 ## Usage
 
 Run in a directory of interest via [`npx`](https://www.npmjs.com/package/npx):
