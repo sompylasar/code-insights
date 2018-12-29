@@ -1,0 +1,48 @@
+{
+  "name": "@sompylasar/code-insights",
+  "version": "0.0.1",
+  "description": "A set of CLI tools that run over your JavaScript source code and show some stats useful for code health maintenance and refactoring.",
+  "keywords": [],
+  "author": "Ivan Babak <babak.john@gmail.com>",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "bin": {
+    "code-insights": "./bin/cli.js"
+  },
+  "engines": {
+    "node": "^8.15.0"
+  },
+  "dependencies": {
+    "ast-types": "^0.11.7",
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.1",
+    "debug": "^4.1.0",
+    "escomplex": "^2.0.0-alpha",
+    "glob": "^7.1.3",
+    "leasot": "^6.6.2",
+    "listr": "^0.14.3",
+    "lodash": "^4.17.11",
+    "minimist": "^1.2.0",
+    "pretty-error": "^2.1.1",
+    "prettyjson": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-date-mock": "^1.0.6",
+    "prettier": "^1.15.3"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-date-mock"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "jest"
+  }
+}
